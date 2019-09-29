@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="./action_page.php">
+  Name: <input type="text" name="name"><br>
+  Chest: <input type="text" name="chest"><br>
+  Stomach: <input type="text" name="stomach"><br>
+  Waist: <input type="text" name="waist"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
