@@ -8,16 +8,13 @@ $link = mysqli_connect("localhost", "root", "", "demo");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-?>
 
-Welcome <?php echo $_POST["name"]; ?><br>
-Chest: <?php echo $_POST["chest"]; ?><br>
-Stomach: <?php echo $_POST["stomach"]; ?><br>
-Waist: <?php echo $_POST["waist"]; ?><br>
+$name = mysqli_real_escape_string($link, $_REQUEST['name']);
+$chest = mysqli_real_escape_string($link, $_REQUEST['chest']);
+$stomach = mysqli_real_escape_string($link, $_REQUEST['stomach']);
+$waist = mysqli_real_escape_string($link, $_REQUEST['waist']);
 
-
-<?php
-$sql = "INSERT INTO bodysize (first_name, last_name, email) VALUES ('Peter', 'Parker', 'peterparker@mail.com')";
+$sql = "INSERT INTO bodysize (name, chest, stomach, waist) VALUES ('$name', '$chest', '$stomach', '$waist')";
 
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
