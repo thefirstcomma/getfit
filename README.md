@@ -1,10 +1,10 @@
-# GETFIT
-# Authors:
+# CS4800 Software Engineering - GETFIT
+### Authors:
 #### Alex Vargas
 #### Andrew Kim
 #### Aaron Truong
 
-## Project Charter
+## Project Description/Charter
 
 Our project is based on building a 2D Dress Library where users can import their own dresses, adjust their body sizes, and see how the dress looks on a silhouette with the same body measurements as the user. The user will be able to create their own account and save their body measurements with the dress. This will allow a profile section for users to view and add new dresses as desired. In order to create this application, we leaned towards the web development side and decided to use JavaScript and HTML5 as our framework. For our backend we use SQL and PHP in order to store our body dimensions. We will have one group member assigned as the project leader, one in charge of the front end development, and one in charge of the back end development. Front end developer should be in charge of how the body size of the user changes and how the dress will fit onto their body. Back end developer will determine how to store the dresses and save user information. The project leader will manage project members and keep KanbanFlow sprint sessions updated. Ultimately, our objective is to create a fully functional virtual wardrobe where users are able to visualize a dress on themselves and be content with the results that our website application produces.
 
